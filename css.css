@@ -1,0 +1,58 @@
+html,body{
+	height:100%;
+	width:100%;
+	border: 2px solid #DAA520;
+}
+#main{
+	height:75%;
+	width:100%;
+}
+#divio{
+	height:50%;
+}
+#youpic{
+	position:absolute;
+	left:10%;
+	top:30%;
+}
+#enemypic{
+	position:absolute;
+	right:10%;
+	top:30%;
+}
+#vs{
+	position:absolute;
+	top:25%;
+	right:42%;
+	visibility:hidden;
+}
+#rcont{
+	height:20%;
+	text-align:center;
+}
+#space{
+	height:30%;
+}
+#result{
+	font-size:48px;
+	font-family:Tacoma;
+}
+#buttons{
+	text-align:center;
+}
+#youdiv{
+	position:absolute;
+	top:2%;
+	left:5%;
+	color:blue;
+	font-size:48px;
+	text-align:center;
+}
+#ediv{
+	position:absolute;
+	top:2%;
+	right:5%;
+	color:red;
+	font-size:48px;
+	text-align:center;
+}
