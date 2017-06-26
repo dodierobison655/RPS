@@ -29,10 +29,11 @@ function rock() {
 		you += 1;
 	}
 	enemypic.style.opacity = 1;
+	var epic = enemypic.src;
 	setTimeout(function(){
 	var id = setInterval(fade, 50);
 		function fade(){ 
-			if(enemyopacity <= 0){
+			if(enemyopacity <= 0 || enemypic.src!=epic || enemypic.style.opacity != enemyopacity){
 				clearInterval(id);
 				enemyopacity = 1;
 			} else {
@@ -66,10 +67,11 @@ function paper() {
 		enemy += 1;
 	}
 	enemypic.style.opacity = 1;
+	var epic = enemypic.src;
 	setTimeout(function(){
 	var id = setInterval(fade, 50);
 		function fade(){ 
-			if(enemyopacity <= 0){
+			if(enemyopacity <= 0 || enemypic.src!=epic || enemypic.style.opacity != enemyopacity){
 				clearInterval(id);
 				enemyopacity = 1;
 			} else {
@@ -103,10 +105,12 @@ function scissors() {
 		document.getElementById("result").innerHTML = "Draw, Try Again.";
 	}
 	enemypic.style.opacity = 1;
+	enemyopacity = 1;
+	var epic = enemypic.src;
 	setTimeout(function(){
 	var id = setInterval(fade, 50);
 		function fade(){ 			
-			if(enemyopacity <= 0){
+			if(enemyopacity <= 0 || enemypic.src!=epic || enemypic.style.opacity != enemyopacity){
 				clearInterval(id);
 				enemyopacity = 1;
 			} else {
